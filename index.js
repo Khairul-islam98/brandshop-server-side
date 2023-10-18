@@ -33,6 +33,7 @@ async function run() {
 
     app.get('/brand', async(req, res) => {
       const result = await brandCollection.find().toArray()
+      console.log(result);
       res.send(result)
     })
 
